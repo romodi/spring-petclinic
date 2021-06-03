@@ -11,6 +11,7 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.4.5</version>
+    <packaging>war</packaging>
   </parent>
   <name>petclinic</name>
 
@@ -123,6 +124,11 @@
 
   <build>
     <plugins>
+      
+      <plugin>
+				 <artifactId>maven-war-plugin</artifactId>
+				 <version>3.2.0</version>
+		  </plugin>
       <plugin>
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>
